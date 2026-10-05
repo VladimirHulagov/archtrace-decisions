@@ -1,0 +1,22 @@
+---
+id: "001"
+title: "Нет стандарта control-plane между чиплетами"
+status: accepted
+type: problem
+phase: 1
+parent: null
+cross_refs: []
+created: 2026-10-05
+---
+
+## Контекст
+
+Мультивендорные чиплетные системы (SiP) требуют транспортировки SCMI (system control) между чиплетами разных вендоров. Готового стандарта нет: UCIe не определяет внутриядревый транспорт и management-биндинги, I3C — отдельный физический уровень, BOW — point-to-point без маршрутизации. Роб (AMD) начал маппинг SCMI на UCIe; Бруно — параллельный документ для I3C (CSA рекомендует I3C как system control interface).
+
+
+**Из обсуждения в чате:**
+
+> «Общая модель доставки SCMI-сообщения: любой транспорт должен уметь упаковать сообщение, определить адрес хранения в endpoint и смаршрутизировать до endpoint — youtube.com/watch?v=g0zTysNyd2k» — Rob (AMD), Chiplet Systems, 2026-04-15
+> «Роб ранее инициировал стандарт на транспортировку ARM SCMI over UCIe; Бруно готовит аналогичный документ для SCMI over I3C — youtube.com/watch?v=IXifDBAGtys» — Bruno, Chiplet Systems, 2026-06-24
+
+
