@@ -1,6 +1,5 @@
 ---
 id: "007"
-title: "Thermal trip: IBI-сообщения или open-drain"
 status: debating
 type: paradigm
 phase: 3
@@ -8,6 +7,8 @@ parent: "006"
 cross_refs: []
 created: 2026-10-05
 ---
+
+# Thermal trip: IBI-сообщения или open-drain
 
 ## Контекст
 
@@ -17,5 +18,4 @@ created: 2026-10-05
 **Из обсуждения в чате:**
 
 > «open-drain решение логично и на уровне package — все чиплеты участвуют в open-drain сети и мгновенно получают trip — youtube.com/watch?v=IXifDBAGtys» — Jay/Giri (AMD), Chiplet Systems, 2026-06-24
-
 
