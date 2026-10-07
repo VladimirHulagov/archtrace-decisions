@@ -30,15 +30,11 @@ created: 2026-10-05
 
 SCMI over MCTP over I3C; спецификация Бруно дошла до v0.7, презентована FCSA и на общем OCP-звонке («very coherent»).
 
-SCMI over MCTP over I3C; спецификация Бруно дошла до v0.7, презентована FCSA и на общем OCP-звонке («very coherent»).
-
 ### Consequences
 
 Все коммуникации по I3C принуждаются к MCTP (замечание Gilberto; контраргумент — future-proof, отдельные спеки для других протоколов); несколько MCTP endpoints на одном I3C-адресе должны объявлять себя MCTP-бриджем; discovery опирается на I3C enumeration + MCTP discovery.
 
 **Из проблемы 001 (S3):** два несогласованных маппинга SCMI (Rob→UCIe, Bruno→I3C) → I3C-путь требует собственного решения (S3).
-
-Все коммуникации по I3C принуждаются к MCTP (замечание Gilberto; контраргумент — future-proof, отдельные спеки для других протоколов); несколько MCTP endpoints на одном I3C-адресе должны объявлять себя MCTP-бриджем; discovery опирается на I3C enumeration + MCTP discovery.
 
 ## Pros and Cons of the Options
 
@@ -53,12 +49,4 @@ SCMI over MCTP over I3C; спецификация Бруно дошла до v0.
 ### Поддержать и I²C legacy
 
 * отклонено: MCTP over I²C опирается на SMBus ARP и polling, без IBI — «burden»
-* SCMI over MCTP over I3C; спецификация Бруно дошла до v0.7, презентована FCSA и на общем OCP-звонке («very coherent»).
-* Все коммуникации по I3C принуждаются к MCTP (замечание Gilberto; контраргумент — future-proof, отдельные спеки для других протоколов); несколько MCTP endpoints на одном I3C-адресе должны объявлять себя MCTP-бриджем; discovery опирается на I3C enumeration + MCTP discovery.
-* **Из проблемы 001 (S3):** два несогласованных маппинга SCMI (Rob→UCIe, Bruno→I3C) → I3C-путь требует собственного решения (S3).
-* ### Option A: SCMI → MCTP → I3C
-* ### Option B: SCMI напрямую в I3C
-* ### Option C: Поддержать и I²C legacy
-* SCMI over MCTP over I3C; спецификация Бруно дошла до v0.7, презентована FCSA и на общем OCP-звонке («very coherent»).
-* Все коммуникации по I3C принуждаются к MCTP (замечание Gilberto; контраргумент — future-proof, отдельные спеки для других протоколов); несколько MCTP endpoints на одном I3C-адресе должны объявлять себя MCTP-бриджем; discovery опирается на I3C enumeration + MCTP discovery.
 
