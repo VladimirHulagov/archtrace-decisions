@@ -1,6 +1,5 @@
 ---
 id: "021"
-title: "Credo VSR против UCIe/BoW/Marvell"
 status: debating
 type: paradigm
 phase: 3
@@ -8,6 +7,8 @@ parent: "020"
 cross_refs: []
 created: 2026-10-05
 ---
+
+# Credo VSR против UCIe/BoW/Marvell
 
 ## Контекст
 
@@ -17,5 +18,4 @@ created: 2026-10-05
 **Из обсуждения в чате:**
 
 > «Alan: Credo VSR — «не тот молоток»... консенсус — заменить/дополнить публичными данными UCIe, «bunch of wires» и Marvell (~3x к UCIe, 4 ТБ/мм) — youtube.com/watch?v=YlOPtqqnHhU» — Alan + Arvin + Patricia, Modularity for HPC & AI, 2026-09-15
-
 
