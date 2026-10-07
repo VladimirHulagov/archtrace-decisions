@@ -1,6 +1,5 @@
 ---
 id: "001"
-title: "Нет стандарта control-plane между чиплетами"
 status: accepted
 type: problem
 phase: 1
@@ -8,6 +7,8 @@ parent: null
 cross_refs: []
 created: 2026-10-05
 ---
+
+# Нет стандарта control-plane между чиплетами
 
 ## Контекст
 
