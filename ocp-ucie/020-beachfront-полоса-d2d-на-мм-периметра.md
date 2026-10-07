@@ -1,6 +1,5 @@
 ---
 id: "020"
-title: "Beachfront: полоса D2D на мм периметра"
 status: accepted
 type: problem
 phase: 1
@@ -8,6 +7,8 @@ parent: null
 cross_refs: []
 created: 2026-10-05
 ---
+
+# Beachfront: полоса D2D на мм периметра
 
 ## Контекст
 
@@ -18,5 +19,4 @@ created: 2026-10-05
 
 > «при bump pitch 100/40 мкм расчёт не сходится, нужны pitch 10–5 мкм; при 40 мкм придётся считать UCIe и сериализацию — youtube.com/watch?v=I-zbwey_y94» — Alan + Arvind, Modularity for HPC & AI, 2026-09-01
 > «PCIe Gen 7 даёт лишь ~24 терабита на миллиметр и энергозатратен — для die-to-die это не имеет смысла — youtube.com/watch?v=hnXBI-arv5M» — Каш Джохал (YourChip), 2026-06-09
-
 
