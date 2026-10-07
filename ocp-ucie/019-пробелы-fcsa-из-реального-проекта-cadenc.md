@@ -1,6 +1,5 @@
 ---
 id: "019"
-title: "Пробелы FCSA из реального проекта Cadence"
 status: proposed
 type: problem
 phase: 1
@@ -8,6 +7,8 @@ parent: "017"
 cross_refs: []
 created: 2026-10-05
 ---
+
+# Пробелы FCSA из реального проекта Cadence
 
 ## Контекст
 
@@ -17,5 +18,4 @@ Cadence мигрирует референсную платформу Physical AI
 **Из обсуждения в чате:**
 
 > «для настоящего plug-and-play нужны более конкретные форматы сообщений... сейчас «можно всё», но совместной работы между вендорами это не обеспечивает — youtube.com/watch?v=TkAJNgbham0» — Juny (Cadence), FCSA, 2026-04-13
-
 
