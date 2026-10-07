@@ -1,6 +1,5 @@
 ---
 id: "003"
-title: "Слоёная модель: UCIe первым, bindings следом"
 status: accepted
 type: paradigm
 phase: 3
@@ -8,6 +7,8 @@ parent: "002"
 cross_refs: []
 created: 2026-10-05
 ---
+
+# Слоёная модель: UCIe первым, bindings следом
 
 ## Контекст
 
@@ -17,5 +18,4 @@ created: 2026-10-05
 **Из обсуждения в чате:**
 
 > «Итог дискуссии: сделать mapping на UCIE, расписать, какие возможности каким уровнем выполняются, затем примерить на остальные — youtube.com/watch?v=yNJRfoh1pkg» — Rob (AMD), Chiplet Systems, 2026-04-08
-
 
