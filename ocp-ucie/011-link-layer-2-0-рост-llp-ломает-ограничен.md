@@ -1,6 +1,5 @@
 ---
 id: "011"
-title: "Link layer 2.0: рост LLP ломает ограничения 1.x"
 status: accepted
 type: problem
 phase: 1
@@ -8,6 +7,8 @@ parent: null
 cross_refs: []
 created: 2026-10-05
 ---
+
+# Link layer 2.0: рост LLP ломает ограничения 1.x
 
 ## Контекст
 
