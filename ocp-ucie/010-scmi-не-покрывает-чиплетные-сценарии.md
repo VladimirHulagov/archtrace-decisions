@@ -1,6 +1,5 @@
 ---
 id: "010"
-title: "SCMI не покрывает чиплетные сценарии"
 status: debating
 type: problem
 phase: 1
@@ -8,6 +7,8 @@ parent: "001"
 cross_refs: []
 created: 2026-10-05
 ---
+
+# SCMI не покрывает чиплетные сценарии
 
 ## Контекст
 
@@ -18,5 +19,4 @@ created: 2026-10-05
 
 > «SCMI определяет сообщения (payload) для базовых ресурсов, но не функции API — нет C-кода; абстракционный слой может агрегировать несколько SCMI-сообщений в одну функцию — youtube.com/watch?v=2hFN5tLTrLI» — Rob (AMD), Chiplet Systems, 2026-09-16
 > «у SCMI есть 10-битный token field, у MCTP message tag всего 3 бита → максимум 8 outstanding transactions на endpoint — youtube.com/watch?v=ds7T77SRzD8» — Bruno, Chiplet Systems, 2026-08-26
-
 
