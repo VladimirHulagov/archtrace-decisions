@@ -12,12 +12,12 @@ created: 2026-10-05
 
 ## Context and Problem Statement
 
-Альтернатива Rob — SCMI напрямую в UCIe минуя MCTP (сейчас нет способа попасть в UCIe через MCTP; есть неиспользованное соглашение UCIE–DMTF, Rob готов его «запустить», возможно волонтёрством). Обсуждение показало преимущество архитектуры «SCMI → всегда MCTP → биндинги ниже»: SCMI остаётся агностичен к транспорту (I3C, UCIe sideband/mainband), не нужны новые shim-слои и правки спеки. Bruno (автор альтернативы) согласен отозвать предложение, если оно усложняет.
 
+**Кросс-упоминания из других воркстримов:**
 
-**Из обсуждения в чате:**
+> «Сценарии: inband log export to USB, PLDM inband, log into the host, outband. - Открытый вопрос: какой сторонний список vendor ID использовать. Ранее расходились в обсуждении; кандидат — **IANA Private Enterprise Number (PEN)**, он используется в MCTP и в IPMI FRU data; альтернатива — PCI vendor ID. - Решение по духу MCTP base spec: в vendor-defined message types MCTP есть 8-битный идентификатор me…» — HM - DDD _ Datacenter Diagnostics and Debug - workstrea, 2026-05-07 — youtube.com/watch?v=XnZCKWrW0EU
+> «**3. Дискуссия: определения in-band / out-of-band (Остин):** - Текущее определение in-band в спеке привязано к сетевому доступу, но в DMTF (MCTP) in-band — это код, исполняющийся в host OS и обращающийся к устройству напрямую (например, по PCI-шве), без host-сети Ethernet; при этом MCTP и Redfish определяют термины по-разному. - Уточнение: в спеке термины используются 14 раз, в основном в информат…» — HM - DDD _ Datacenter Diagnostics and Debug - workstrea, 2026-09-24 — youtube.com/watch?v=2eEv_dEECZc
 
-> «Итог: направление — MCTP как универсальный слой, пока не встретим roadblock; Rob выяснит наличие реальных препятствий в UCIE-стандарте — youtube.com/watch?v=UNE6V8YvIf0» — Rob + Bruno, Chiplet Systems, 2026-07-29
 
 ## Considered Options
 
