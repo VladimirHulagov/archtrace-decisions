@@ -12,13 +12,11 @@ created: 2026-10-05
 
 ## Контекст
 
-Мультивендорные чиплетные системы (SiP) требуют транспортировки SCMI (system control) между чиплетами разных вендоров. Готового стандарта нет: UCIe не определяет внутриядревый транспорт и management-биндинги, I3C — отдельный физический уровень, BOW — point-to-point без маршрутизации. Роб (AMD) начал маппинг SCMI на UCIe; Бруно — параллельный документ для I3C (CSA рекомендует I3C как system control interface).
 
+**Кросс-упоминания из других воркстримов:**
 
-**Из обсуждения в чате:**
+> «**2. Bruno (Cynple), SCMI over I3C — обзор спецификации:** - Контекст: system control в чипе — распределённая функция по OCP FCSA: primary system controller в primary chiplet и secondary system controllers в secondary chiplets; между ними нужны system control interfaces. FCSA называет SCMI и RPMI вариантами протокола и упоминает I3C как физический интерфейс, но не определяет транспорт SCMI/RPMI по…» — Server - OCE - Foundation Chiplet System Architecture -, 2026-08-10 — youtube.com/watch?v=YVDgs4HamqM
 
-> «Общая модель доставки SCMI-сообщения: любой транспорт должен уметь упаковать сообщение, определить адрес хранения в endpoint и смаршрутизировать до endpoint — youtube.com/watch?v=g0zTysNyd2k» — Rob (AMD), Chiplet Systems, 2026-04-15
-> «Роб ранее инициировал стандарт на транспортировку ARM SCMI over UCIe; Бруно готовит аналогичный документ для SCMI over I3C — youtube.com/watch?v=IXifDBAGtys» — Bruno, Chiplet Systems, 2026-06-24
 
 ## Симптомы и факты
 
