@@ -12,10 +12,9 @@ created: 2026-10-05
 
 ## Контекст
 
-Можно ли передавать быстрые критичные события (thermal trip — запрос отключения питания) через IBI/сообщения, или нужны дискретные сигналы. Изначальное решение — high-priority события через IBI-прерывания. Контрпредложение Jay (AMD): open-drain сеть на уровне package — все чиплеты участвуют и мгновенно получают trip; сетка датчиков с порогами полностью аппаратная, без firmware. В server-чипах обычно два сигнала: probot и thermal trip; в dual-socket перегрев одного означает близкий перегрев второго.
 
+**Кросс-упоминания из других воркстримов:**
 
-**Из обсуждения в чате:**
+> «S и M = SCMI и MCTP; P = profile (возможны варианты в будущем). - I3C: двухпроводная multidrop-шина (улучшенный I2C), полоса от 12,5 Мбит/с (1 data lane, SDR) до 100 Мбит/с (4 data lanes), fabric enumeration с динамическим выделением адресов, in-band interrupts (IBI) — ключевая функция для спецификации. - MCTP: транспортно-агностичный протокол, DMTF определяет binding-спецификации для ряда физичес…» — Server - OCE - Foundation Chiplet System Architecture -, 2026-08-10 — youtube.com/watch?v=YVDgs4HamqM
 
-> «open-drain решение логично и на уровне package — все чиплеты участвуют в open-drain сети и мгновенно получают trip — youtube.com/watch?v=IXifDBAGtys» — Jay/Giri (AMD), Chiplet Systems, 2026-06-24
 
