@@ -1,6 +1,5 @@
 ---
 id: "001"
-title: "Интеграция HPM/SCM без кастомного BMC"
 status: accepted
 type: problem
 phase: 1
@@ -9,13 +8,14 @@ cross_refs: []
 created: 2026-10-05
 ---
 
+# Интеграция HPM/SCM без кастомного BMC
+
 ## Контекст
 
-Спеки MHS покрывают электро-механику («подключишь — не сгорит»), но программная интеграция модулей от разных вендоров требует априорного знания BMC о каждой плате: шины, устройства, регистры, FPGA-логика. Каждая комбинация HPM+SCM = ручная интеграция («plug and code»). Цель workstream Modular Plug-and-Play (лид Phil Leech, HPE, с 2024) — смешивание HPM и SCM от разных поставщиков.
 
+**Кросс-упоминания из других воркстримов:**
 
-**Из обсуждения в чате:**
-
-> «Цель PnP — смешивание HPM и SCM от разных поставщиков; спеки MHS — электро-механические («подключишь — не сгорит»), но всё остальное — plug and code — youtube.com/watch?v=TDWUsWESO2U» — Phil Leech (HPE), DC-MHS Public, 2026-07-15
+> «OCP Open Platform Firmware (EDK2, OpenBMC как референс); Arm SBSA и SBBR; чиплетный SOC по FCS (Foundation Chiplet System Architecture); межчиплетный интерфейс — UCIe. - Конфигурация узла: свой HPM, один Arm Neoverse CPU; 12 слотов DDR5 до 8400 MT/s на узел; 96 линий PCIe Gen 6 с CXL 3.0; BMC — ASPEED AST2600 (заменяем партнёром); 21" 1U форм-фактор, совместимый с OCP 3.0 rack. - Открытая часть —…» — Server - project, 2026-09-23 — youtube.com/watch?v=Ucah5MpA2A0
+> «Существует PLDM-спека о хендшейке BIOS↔BMC — возможно, её стоит расширить. - Итог: передавать всё собранное BIOS'ом по стандартному каналу; это пересекается с телеметрией и требует единообразия между вендорами (по аналогии с consistent format в EPCA/UCPI). Аллисон сверит с уже сделанным DCSCM-спецификацией out-of-band конфигурации, чтобы не дублировать Redfish (Redfish «слишком поздно — нужен ребу…» — OPF - Open Platform Firmware - project, 2026-06-04 — youtube.com/watch?v=1zooRC-rWcA
 
 
